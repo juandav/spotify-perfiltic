@@ -11,6 +11,7 @@ const Home = () => (
     </Head>
 
     <Nav />
+    <p>{process.env.SPOTIFY_SCOPES}</p>
 
     <Hero>
       <Title>Welcome to Next.js!</Title>

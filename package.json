@@ -8,6 +8,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "docker-build":"docker build -t next-app .",
+    "docker-build-ms": "docker build -t next-app -f ./Dockerfile.multistage .",
+    "docker-run": "docker run --rm -it -p 3000:3000 next-app",
+    "deploy": "now --prod",
     "release": "standard-version",
     "patch": "npm run release -- --release-as patch",
     "minor": "npm run release -- --release-as minor",
@@ -47,5 +51,8 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "engines": {
+    "node": ">=12.13.1"
   }
 }

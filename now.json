@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ],
+  "build": {
+    "env": {
+      "SPOTIFY_CLIENT_ID": "",
+      "SPOTIFY_SCOPES": "user-read-private+user-read-email+playlist-read-private+user-top-read+user-read-recently-played+playlist-modify-public+playlist-modify-private",
+      "URL_AUTH_REDIRECT": "/spotify"
+    }
+  }
+}
