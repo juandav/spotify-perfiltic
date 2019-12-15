@@ -27,11 +27,11 @@
     "babel-plugin-styled-components": "1.10.6",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.15.1",
+    "eslint-plugin-json": "^2.0.1",
     "husky": "3.1.0",
     "jest": "24.9.0",
     "lint-staged": "9.5.0",
     "prettier": "^1.19.1",
-    "prettier-standard": "16.1.0",
     "standard": "^14.3.1",
     "standard-version": "7.0.1"
   },
@@ -43,7 +43,7 @@
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
-      "prettier-standard --lint",
+      "eslint --fix",
       "git add"
     ]
   }
