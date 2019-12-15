@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/juandav/spotify-perfiltic/compare/v0.2.4...v0.3.0) (2019-12-15)
+
+
+### Features
+
+* add docker and now config ([f1904f9](https://github.com/juandav/spotify-perfiltic/commit/f1904f99fdce6df21fe7c11572eef8ee45b6a46a))
+
 ### [0.2.4](https://github.com/juandav/spotify-perfiltic/compare/v0.2.3...v0.2.4) (2019-12-15)
 
 
