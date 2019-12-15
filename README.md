@@ -6,3 +6,12 @@
 ## Description
 
 SPTIC is a challenge for the "ProfileTIC" company.
+
+## Environments
+Create file .env and add:
+
+| KEY               | VALUE                                                                                                                                          |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| SPOTIFY_SCOPES    | user-read-private+user-read-email+playlist-read-private+user-top-read+user-read-recently-played+playlist-modify-public+playlist-modify-private |
+| SPOTIFY_CLIENT_ID |                                                                                                                                                |
+| NODE_ENV          | development                                                                                                                                    |
