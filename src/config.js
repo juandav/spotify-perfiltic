@@ -2,7 +2,7 @@ export const URL_REDIRECT = 'http://localhost:3000/spotify'
 export const SPOTIFY_AUTHORIZE_ENDPOINT =
   '' +
   'https://accounts.spotify.com/authorize/' +
-  `?client_id=${process.env.SPOTIFY_CLIENT_ID}` +
+  `?client_id=${process.env.SPOTIFY_KEY}` +
   '&response_type=token' +
   `&redirect_uri=${URL_REDIRECT}` +
   `&scope=${process.env.SPOTIFY_SCOPES}`

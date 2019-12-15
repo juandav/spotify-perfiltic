@@ -11,7 +11,7 @@ const listIcon = {
 const HeaderTab = ({ name, icon }) => (
   <>
     <title>{name}</title>
-    <link rel="icon" href={listIcon[icon || listIcon.default]} />
+    <link rel='icon' href={listIcon[icon || listIcon.default]} />
   </>
 )
 
