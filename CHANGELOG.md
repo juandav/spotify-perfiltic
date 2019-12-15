@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/juandav/spotify-perfiltic/compare/v0.2.3...v0.2.4) (2019-12-15)
+
+
+### Bug Fixes
+
+* **linter:** update linter ([903a2ad](https://github.com/juandav/spotify-perfiltic/commit/903a2ad78487ea18f53f0484b17c7d59b425ee50))
+
 ### [0.2.3](https://github.com/juandav/spotify-perfiltic/compare/v0.2.0...v0.2.3) (2019-12-15)
 
 
