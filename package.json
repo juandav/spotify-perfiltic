@@ -3,6 +3,7 @@
   "version": "0.2.3",
   "private": true,
   "scripts": {
+    "lint": "lint-staged",
     "test": "jest",
     "dev": "next dev",
     "build": "next build",
@@ -42,7 +43,7 @@
     }
   },
   "lint-staged": {
-    "pages/**/*,!src/**/*.{js,css,json,md}": [
+    "*.{js,css,json}": [
       "eslint --fix",
       "git add"
     ]
