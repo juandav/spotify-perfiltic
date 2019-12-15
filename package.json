@@ -30,11 +30,9 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "**/*": [
-        "prettier-standard --lint",
-        "git add"
-      ]
-    }
+    "*.{js,css,json,md}": [
+      "prettier-standard --lint",
+      "git add"
+    ]
   }
 }
