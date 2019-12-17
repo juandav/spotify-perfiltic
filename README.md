@@ -14,7 +14,7 @@ Create file .env.build and add:
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | SPOTIFY_SCOPES    | user-read-private+user-read-email+playlist-read-private+user-top-read+user-read-recently-played+playlist-modify-public+playlist-modify-private |
 | SPOTIFY_CLIENT_ID | SPOTIFY_CLIENT_ID                                                                                                                                               |
-| URL_AUTH_REDIRECT | http://localhost:3000/spotify                                                                                                                                   |
+| URL_AUTH_REDIRECT | http://localhost:3000                                                                                                                                           |
 ## Run development app
 
 ```bash
