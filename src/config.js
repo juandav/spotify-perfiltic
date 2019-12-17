@@ -1,4 +1,4 @@
-export const URL_REDIRECT = process.env.URL_AUTH_REDIRECT || 'http://localhost:3000/spotify'
+export const URL_REDIRECT = process.env.URL_AUTH_REDIRECT || 'http://localhost:3000'
 export const SPOTIFY_AUTHORIZE_ENDPOINT =
   '' +
   'https://accounts.spotify.com/authorize/' +
