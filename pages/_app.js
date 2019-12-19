@@ -1,6 +1,7 @@
 import App from 'next/app'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
+import { GlobalStyle } from '../src/styles/GlobalStyles'
 
 const theme = {
   colors: {
@@ -14,6 +15,7 @@ export default class MyApp extends App {
     return (
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
+        <GlobalStyle />
       </ThemeProvider>
     )
   }

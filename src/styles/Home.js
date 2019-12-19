@@ -12,10 +12,12 @@ export const Title = styled.h1`
   line-height: 1.15;
   font-size: 48px;
   text-align: center;
+  color: #2e112d;
 `
 
 export const Description = styled.p`
   text-align: center;
+  color: #2e112d;
 `
 
 export const Row = styled.div`
@@ -38,14 +40,14 @@ export const Card = styled.a`
   }
   & > h3 {
     margin: 0;
-    color: #067df7;
+    color: #2e112d;
     font-size: 18px;
   }
   & > p {
     margin: 0;
     padding: 12px 0 0;
     font-size: 13px;
-    color: #333;
+    color: #2e112d;
   }
 `
 export const Button = styled.button`

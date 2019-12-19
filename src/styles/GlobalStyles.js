@@ -28,8 +28,13 @@ export const GlobalStyle = createGlobalStyle`
     background: #fefefe;
     height: 100vh;
     margin: 0 auto;
-    max-width: 500px;
     overscroll-behavior: none;
     width: 100%;
+    font-family: Comic Sans MS,cursive,sans-serif;
+    background-image: url('/images/forest-light-bg.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `
