@@ -21,4 +21,6 @@ const Dashboard = () => (
   </Background>
 )
 
+// Dashboard.getInitialProps = async function () { }
+
 export default Dashboard
