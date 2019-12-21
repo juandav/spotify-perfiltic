@@ -8,7 +8,7 @@ export const Background = styled.div`
   background-size: cover;
 `
 
-export const PlayerContainer = styled.div`
+export const Player = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -17,19 +17,6 @@ export const PlayerContainer = styled.div`
   width: 100%;
   height: 100%;
   flex-direction: column;
-`
-
-export const Card = styled.div`
-  width: 510px;
-  min-height: 100px;
-  min-width: 300px;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 3px;
-  background-color: #fff;
-  box-shadow: 0 10px 20px rgba(0,0,0,.2);
-  position: relative;
-  overflow: hidden;
 `
 
 export const Controls = styled.div`

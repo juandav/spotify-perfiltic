@@ -2,7 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import { HeaderTab } from '../src/components/HeaderTab'
 import Nav from '../src/components/Nav'
-import { Background, PlayerContainer, Card, Controls } from '../src/styles/Dashboard'
+import { Background, Player, Controls } from '../src/styles/Dashboard'
+import { Screen } from '../src/components/Screen'
 
 const Dashboard = () => (
   <Background>
@@ -10,17 +11,15 @@ const Dashboard = () => (
       <HeaderTab name='Home' icon='cartoon' />
     </Head>
     <Nav />
-    <PlayerContainer>
-      <Card>
-        <h1>dada</h1>
-      </Card>
+    <Player>
+      <Screen>
+        <h2>mkmkmkmkmkmkmmmkk</h2>
+      </Screen>
       <Controls>
-        <h6>controls</h6>
+        <h1>controls</h1>
       </Controls>
-    </PlayerContainer>
+    </Player>
   </Background>
 )
-
-// Dashboard.getInitialProps = async function () { }
 
 export default Dashboard
