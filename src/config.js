@@ -10,8 +10,8 @@ export const SPOTIFY_PROFILE_ENDPOINT = token =>
   `https://api.spotify.com/v1/me?access_token=${token}`
 export const SPOTIFY_PLAYLIST_ENDPOINT = token =>
   `https://api.spotify.com/v1/me/playlists?access_token=${token}`
-export const SPOTIFY_PLAYLIST_DETAIL_ENDPOINT = (id, token) =>
-  `https://api.spotify.com/v1/playlists/${id}/tracks?access_token=${token}`
+export const SPOTIFY_PLAYLIST_DETAIL_ENDPOINT = (endpoint, token) =>
+  `${endpoint}?access_token=${token}`
 
 // PLAYLIST CRUD
 export const SPOTIFY_PLAYLIST_CREATE = (userId, token) =>

@@ -13,7 +13,7 @@ import * as types from './action-types'
 import * as actions from './actions'
 import { SPOTIFY_PLAYLIST_ENDPOINT } from '../../config'
 
-const getOptions = ({ token }) => ({
+const getOptions = token => ({
   url: SPOTIFY_PLAYLIST_ENDPOINT(token),
   method: 'GET'
 })
@@ -28,6 +28,7 @@ const fetchPlaylistEpic = action$ => action$.pipe(
       .pipe(
         mergeMap(
           resp => concat(
+            of(actions.fetchPlaylistLoading(false)),
             of(actions.fetchPlaylistSuccess(resp))
           )
         ),
