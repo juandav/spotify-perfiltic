@@ -36,8 +36,8 @@
     "universal-rxjs-ajax": "2.0.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.2.0",
-    "@commitlint/config-angular": "8.2.0",
+    "@commitlint/cli": "8.3.4",
+    "@commitlint/config-angular": "8.3.4",
     "babel-eslint": "10.0.3",
     "babel-plugin-styled-components": "1.10.6",
     "enzyme": "3.10.0",
