@@ -23,6 +23,7 @@ const Home = () => {
     if (token === '') {
       document.location = SPOTIFY_AUTHORIZE_ENDPOINT
     } else {
+      console.log('push')
       Router.push({
         pathname: '/dashboard',
         query: { token }

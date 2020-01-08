@@ -1,11 +1,13 @@
 import React from 'react'
-import { Screen as ScreenWrapped } from './styles'
+import { Screen as ScreenWrapped, Content } from './styles'
 import Playlist from './Playlist'
 
 const Screen = ({ children }) => (
   <ScreenWrapped>
     <Playlist />
-    {children}
+    <Content>
+      {children}
+    </Content>
   </ScreenWrapped>
 )
 export { Screen }

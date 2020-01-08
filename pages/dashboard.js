@@ -2,8 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import { HeaderTab } from '../src/components/HeaderTab'
 import Nav from '../src/components/Nav'
-import { Background, Player, Controls } from '../src/styles/Dashboard'
+import { Background, Player, ControlsCointainer } from '../src/styles/Dashboard'
 import { Screen } from '../src/components/Screen'
+import Tracks from '../src/components/Screen/Tracks'
+import Controls from '../src/components/Screen/Controls'
 
 const Dashboard = () => (
   <Background>
@@ -13,11 +15,11 @@ const Dashboard = () => (
     <Nav />
     <Player>
       <Screen>
-        <h2>mkmkmkmkmkmkmmmkk</h2>
+        <Tracks />
       </Screen>
-      <Controls>
-        <h1>controls</h1>
-      </Controls>
+      <ControlsCointainer>
+        <Controls />
+      </ControlsCointainer>
     </Player>
   </Background>
 )

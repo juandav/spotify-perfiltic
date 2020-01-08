@@ -1,24 +1,5 @@
 import styled from 'styled-components'
 
-export const Nav = styled.nav`
-  background: #024959;
-`
-
-export const List = styled.ul`
-  overflow: hidden;
-  list-style: none;
-`
-
-export const Item = styled.li`
-
-`
-export const Link = styled.a`
-  text-decoration: none;
-  color: #fff;
-  padding: 20px;
-  display: block;
-`
-
 export const TimeLineNav = styled.aside`
   display: -webkit-box;
   display: -moz-box;
@@ -52,7 +33,7 @@ export const TimeLineContent = styled.div`
   visibility: ${props => props.hidden ? 'hidden' : ''};
 `
 export const TimeLineMenu = styled.div`
-  background: #0791e6;
+  background: #F7F7F7;
   max-width: 30px;
   -webkit-box-pack: stretch;
   -moz-box-pack: stretch;
@@ -82,7 +63,7 @@ export const TimeLineMenu = styled.div`
 
 export const TimeLineButton = styled.div`
   max-width: 100%;
-  background: #056099;
+  background: #ef5850;
   height: 60px;
   color: #fff;
   font-size: 35px;
@@ -121,4 +102,56 @@ export const TimeLineTitle = styled.a`
   -webkit-align-items: center;
   align-items: center;
   color: #273b47;
+`
+
+export const TimeLineBadge = styled.figure`
+  margin-right: 12px;
+`
+export const TimeLineText = styled.p`
+  font-size: 14px;
+  font-weight: bold;
+`
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: #fff;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-family: 'Open Sans', Arial;
+  font-size: 12px;
+  color: #273b47;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px 20px;
+  min-height: 34px;
+`
+
+export const Cover = styled.img`
+  width: 72px;
+  height: 72px;
+  margin-left: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`
+
+export const Item = styled.section`
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
 `

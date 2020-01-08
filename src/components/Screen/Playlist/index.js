@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import PlaylistComponent from './playlist'
 import { fetchPlaylist } from '../../../store/playlist/actions'
+import { fetchTracks } from '../../../store/tracks/actions'
 import { useLocalStorage } from '../../../hooks/useLocalStorage'
 import { toggleTimeline } from '../../../store/meta/actions'
 
@@ -11,7 +12,8 @@ const Playlist = ({
   loading,
   isOpenTimeLine,
   fetchPlaylist,
-  toggleTimeline
+  toggleTimeline,
+  fetchTracks
 }) => {
   const [token] = useLocalStorage('token', '')
 
@@ -20,6 +22,11 @@ const Playlist = ({
   }, [])
 
   const onToggle = () => toggleTimeline(!isOpenTimeLine)
+  const onClickPlaylist = (event, endpoint) => {
+    event.preventDefault()
+    const urlTracks = `${endpoint}?access_token=${token}`
+    fetchTracks(urlTracks)
+  }
 
   return (
     loading
@@ -32,6 +39,7 @@ const Playlist = ({
             token={token}
             isOpenTimeLine={isOpenTimeLine}
             onToggle={onToggle}
+            onClickPlaylist={onClickPlaylist}
           />
         )
   )
@@ -46,6 +54,6 @@ const mapStateToProps = ({
   loading,
   isOpenTimeLine
 })
-const mapDispatchToProps = ({ fetchPlaylist, toggleTimeline })
+const mapDispatchToProps = ({ fetchPlaylist, toggleTimeline, fetchTracks })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Playlist)

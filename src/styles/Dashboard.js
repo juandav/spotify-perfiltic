@@ -19,12 +19,13 @@ export const Player = styled.div`
   flex-direction: column;
 `
 
-export const Controls = styled.div`
+export const ControlsCointainer = styled.div`
+  display: flex;
   margin-top: -2px;
   text-align: center;
   padding: 10px 20px;
   border-radius: 3px;
   background-color: #ececec;
-  width: 480px;
-  height: 40px;
+  justify-content: center;
+  align-items: center;
 `
