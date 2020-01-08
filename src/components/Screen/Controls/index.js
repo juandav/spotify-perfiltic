@@ -1,41 +1,27 @@
 import React from 'react'
-import {
-  SongDetail, SongControls, SongProgress,
-  ReverseSong, PlaySong, NextSong,
-  TimerLeft, Progress
-} from './style'
-import { MdSkipPrevious, MdPlayCircleOutline, MdSkipNext } from 'react-icons/md'
+import { connect } from 'react-redux'
+import { SongDetail, Player, Container } from './style'
 
-const Controls = props => {
+const Controls = ({ currentSong }) => {
+  const autor = (currentSong.artists) ? currentSong.artists[0].name : 'juandav'
   return (
     <>
       <SongDetail>
-        <p>Canción: Lorem Ipsum</p>
-        <p>Autor: juandav</p>
+        <p>Canción: {currentSong.name}</p>
+        <p>Autor: {autor}</p>
       </SongDetail>
-
-      <div>
-        <SongControls>
-          <ReverseSong>
-            <MdSkipPrevious />
-          </ReverseSong>
-
-          <PlaySong>
-            <MdPlayCircleOutline />
-          </PlaySong>
-
-          <NextSong>
-            <MdSkipNext />
-          </NextSong>
-        </SongControls>
-
-        <SongProgress>
-          <TimerLeft>0:00</TimerLeft>
-          <Progress />
-        </SongProgress>
-      </div>
+      <Container>
+        <Player src={currentSong.preview_url} allowfullscreen />
+      </Container>
     </>
   )
 }
 
-export default Controls
+const mapStateToProps = ({
+  tracks: { current_song: currentSong }
+}) => ({
+  currentSong
+})
+const mapDispatchToProps = null // ({ })
+
+export default connect(mapStateToProps, mapDispatchToProps)(Controls)

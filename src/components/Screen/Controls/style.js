@@ -61,3 +61,14 @@ export const Progress = styled.div`
   background: #404040;
   border-radius: 4px;
 `
+export const Player = styled.iframe`
+  top: 0;
+  left: 0;
+  height: 50px;
+  border: 0;
+`
+
+export const Container = styled.div`
+  position: relative;
+  overflow: hidden;
+`

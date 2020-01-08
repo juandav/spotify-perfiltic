@@ -1,12 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { setCurrentSong } from '../../../store/tracks/actions'
 import TracksComponent from './tracks'
 
 const Tracks = ({
   data,
   error,
-  loading
+  loading,
+  setCurrentSong
 }) => {
+  const playTrack = track => {
+    setCurrentSong(track)
+  }
+
   return (
     loading
       ? <h1>Cargando...</h1>
@@ -15,7 +21,10 @@ const Tracks = ({
         : (
           <>
             <h1>Tracks</h1>
-            <TracksComponent data={data} />
+            <TracksComponent
+              data={data}
+              playTrack={playTrack}
+            />
           </>
         )
   )
@@ -28,6 +37,6 @@ const mapStateToProps = ({
   error,
   loading
 })
-const mapDispatchToProps = null // ({  })
+const mapDispatchToProps = ({ setCurrentSong })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Tracks)
