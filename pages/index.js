@@ -23,7 +23,6 @@ const Home = () => {
     if (token === '') {
       document.location = SPOTIFY_AUTHORIZE_ENDPOINT
     } else {
-      console.log('push')
       Router.push({
         pathname: '/dashboard',
         query: { token }
@@ -32,7 +31,7 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <>
       <Head>
         <HeaderTab name='Home' icon='cartoon' />
       </Head>
@@ -49,7 +48,7 @@ const Home = () => {
           <Button onClick={makeSpotifyProfileCall}>{token !== '' ? 'Proceed to SPTIC' : 'Login'}</Button>
         </Row>
       </Hero>
-    </div>
+    </>
   )
 }
 
